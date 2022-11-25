@@ -1,0 +1,31 @@
+.header {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+
+  .header__logo {
+    max-width: 93px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  .header__item {
+    color: #ffffff;
+    font-size: 0.875rem;
+    padding: 26px 0;
+    text-decoration: none;
+
+    &:hover {
+      color: #ddd7d7;
+    }
+  }
+}

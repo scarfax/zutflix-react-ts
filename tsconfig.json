@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../zutflix-react-js/src/Tmdb.tsx"  ]
 }

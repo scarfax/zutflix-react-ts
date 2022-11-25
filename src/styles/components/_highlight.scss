@@ -1,0 +1,53 @@
+@import "../abstract/variables";
+
+.highlight {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url(/public/images/highlight/movie-back.jpg) no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+
+  .highlight__container {
+    grid-row: 2;
+    padding-left: 60px;
+  }
+
+  .highlight__image {
+    max-width: 90%;
+  }
+
+  .highlight__text {
+    color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    padding-top: 10px;
+    text-shadow: #000000 2px 2px 4px;
+  }
+
+  .highlight__classification {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .highlight__buttons {
+    margin-top: 15px;
+  }
+
+  .highlight__watchbutton {
+    @include button;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .highlight__mylistbutton {
+    @include button;
+    background-color: #333;
+    color: #fff;
+  }
+
+}
+
+
