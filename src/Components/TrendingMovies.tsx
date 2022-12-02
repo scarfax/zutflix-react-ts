@@ -1,6 +1,8 @@
 import React from 'react'
 
-const TrendingMovies = [
+const TrendingMovies = () => {
+  
+const trendingMovie = [
 {
     title: 'Invasores de Corpos',
     abstract: 'Homem percebe que seu amigos começam a agir de forma estranha. Pouco a pouco, ele vai descobrindo que os humanos estão sendo substituídos por alienígenas. Além de resistir à invasão de seu corpo, ele tem de achar uma forma de derrotar essa ameaça maligna.',
@@ -112,4 +114,18 @@ const TrendingMovies = [
 
 ]
 
+return (
+    <div className="trendingMovie__container">
+    {trendingMovie.map((movie) => (<img key={movie.title}
+          className="trendingMovie__poster"
+          src={movie.poster}
+          alt={movie.title}/>
+    
+      ))}
+  </div>
+  )
+}
+
 export default TrendingMovies
+
+

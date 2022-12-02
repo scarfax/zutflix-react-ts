@@ -1,6 +1,9 @@
 import React from 'react'
 
-const HorrorMovies = [
+function HorrorMovies () {
+  
+
+const HorrorMoviesList = [
   {
     title: 'Manos: The Hands of Fate',
     abstract: 'A história é sobre uma família em férias: Michael  e Margaret, a filha Debbie e o cão Peppy, que se hospedam em um hotel na estrada que na verdade é a sede de um culto pagão nefasto.',
@@ -89,5 +92,22 @@ const HorrorMovies = [
     background: 'https://www.themoviedb.org/t/p/original/fk7So2GJ9OeRhjj3MF9knJ8S5GX.jpg',
   },
 ];
+
+/*
+
+return (
+  <section className="horrorMovies">
+    <h2 className="movies__text">Terror</h2>
+    <div className='movies__container'>
+    <div className="item">
+    <img className="movies__item" src={props.poster} alt={props.title}/>
+    </div>
+
+    </div>
+  </section>
+) */
+
+
+}
 
 export default HorrorMovies
