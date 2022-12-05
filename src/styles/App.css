@@ -287,25 +287,21 @@ body {
 }
 
 .trendingMovie__container {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 15px;
-  margin: 0 30px;
+  padding: 50px;
 }
-.trendingMovie__container .trendingMovie__poster {
-  border-radius: 4px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  max-width: 10%;
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+.trendingMovie__container .trendingMovie__box {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(7, minmax(100px, 1fr));
 }
-.trendingMovie__container .trendingMovie__poster:after {
+.trendingMovie__container .trendingMovie__box a {
+  transition: transform 0.3s;
+}
+.trendingMovie__container .trendingMovie__box a:hover {
+  transition: transform 0.3s;
+  transform: scale(1.4);
+}
+.trendingMovie__container .trendingMovie__box img {
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
-  content: "";
-  height: 100%;
-  opacity: 0;
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  width: 100%;
-  z-index: -1;
+  max-width: 100%;
 }/*# sourceMappingURL=App.css.map */

@@ -4,6 +4,9 @@ import Header from './Components/Header'
 import Highlight from './Components/Highlight'
 import Footer from './Components/Footer'
 import TrendingMovies from './Components/TrendingMovies'
+import ScienceFictionMovies from './Components/ScienceFictionMovies'
+import HorrorMovies from './Components/HorrorMovies'
+import CrimeMovies from './Components/CrimeMovies'
 
 
 
@@ -13,6 +16,9 @@ const App = () => {
       <Header/>
       <Highlight/>
       <TrendingMovies/>
+      <ScienceFictionMovies/>
+      <HorrorMovies/>
+      <CrimeMovies/>
       <Footer/>
       </div>
   )
