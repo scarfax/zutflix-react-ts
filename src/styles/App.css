@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 html,
 body,
 div,
@@ -133,82 +134,101 @@ table {
   border-spacing: 0;
 }
 
-.header {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  padding: 20px 60px;
+header {
   position: fixed;
-  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: transparent;
+  transition: all ease 0.5s;
 }
-.header .header__logo {
-  max-width: 93px;
-  padding-right: 30px;
-  text-align: center;
+header.black {
+  background-color: #141414;
 }
-.header .header__menu {
+header .header__container {
+  height: 30px;
+  display: flex;
+}
+header .header__container img {
+  height: 100%;
+  gap: 22px;
+  padding-right: 50px;
+}
+header .header__container .header__menu {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
 }
-.header .header__item {
+header .header__container .header__menu .header__item {
   color: #ffffff;
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding: 26px 0;
   text-decoration: none;
 }
-.header .header__item:hover {
+header .header__container .header__menu .header__item:hover {
   color: #ddd7d7;
+}
+header .header__user {
+  height: 35px;
+}
+header .header__user img {
+  height: 100%;
+  border-radius: 3px;
 }
 
 .highlight {
-  background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  height: 90vh;
 }
-
-.highlight__container {
-  grid-row: 2;
-  padding-left: 60px;
+.highlight .highlight__vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+.highlight .highlight__vertical .highlight__horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-bottom: -150px;
+}
+.highlight .highlight__vertical .highlight__horizontal .highlight__title {
+  display: flex;
   align-items: center;
 }
-
-.highlight__title {
-  display: flex;
-  align-items: flex-end;
-  margin: 10px 0px 20px 20px;
-}
-
-.highlight__zutflix-ico {
+.highlight .highlight__vertical .highlight__horizontal .highlight__title .highlight__zutflix-ico {
   width: 25px;
   height: 25px;
   margin-right: 15px;
 }
-
-.highlight__classification {
+.highlight .highlight__vertical .highlight__horizontal .highlight__title .highlight__classification {
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 600;
 }
-
-.highlight__image {
-  max-width: 90%;
+.highlight .highlight__vertical .highlight__horizontal .highlight__image {
+  max-width: 20%;
 }
-
-.highlight__text {
-  color: #ffffff;
-  font-size: 1.12rem;
+.highlight .highlight__vertical .highlight__horizontal .highlight__text {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #999;
+  max-width: 40%;
   line-height: 1.3;
-  padding-top: 10px;
   text-shadow: #000000 2px 2px 4px;
 }
-
-.highlight__buttons {
-  margin-top: 15px;
+.highlight .highlight__vertical .highlight__horizontal .highlight__buttons {
+  margin-top: 20px;
 }
-
-.highlight__watchbutton {
+.highlight .highlight__vertical .highlight__horizontal .highlight__watchbutton {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
@@ -218,14 +238,13 @@ table {
   margin-right: 10px;
   opacity: 1;
   transition: all ease 0.2s;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000;
 }
-.highlight__watchbutton:hover {
+.highlight .highlight__vertical .highlight__horizontal .highlight__watchbutton:hover {
   opacity: 0.7;
 }
-
-.highlight__mylistbutton {
+.highlight .highlight__vertical .highlight__horizontal .highlight__mylistbutton {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
@@ -236,16 +255,21 @@ table {
   opacity: 1;
   transition: all ease 0.2s;
   background-color: #333;
-  color: #fff;
+  color: #ffffff;
 }
-.highlight__mylistbutton:hover {
+.highlight .highlight__vertical .highlight__horizontal .highlight__mylistbutton:hover {
   opacity: 0.7;
 }
 
 body {
-  background-color: #000000;
-  font-family: "Martel Sans", sans-serif;
+  background-color: #111;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+}
+
+.movieList {
+  margin-top: -40px;
 }
 
 .footer {
@@ -286,22 +310,34 @@ body {
   text-decoration: underline;
 }
 
-.trendingMovie__container {
-  padding: 50px;
+.movieRow {
+  margin-bottom: 30px;
+  display: table-cell;
 }
-.trendingMovie__container .trendingMovie__box {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(7, minmax(100px, 1fr));
+.movieRow .movieRow__listarea {
+  overflow: hidden;
+  padding-left: 2px;
 }
-.trendingMovie__container .trendingMovie__box a {
-  transition: transform 0.3s;
+.movieRow .movieRow__listarea .movieRow__list {
+  transition: all ease 0.5s;
 }
-.trendingMovie__container .trendingMovie__box a:hover {
-  transition: transform 0.3s;
-  transform: scale(1.4);
+.movieRow .movieRow__listarea .movieRow__list .movieRow__item {
+  display: inline-block;
+  width: 300px;
+  cursor: pointer;
 }
-.trendingMovie__container .trendingMovie__box img {
-  border-radius: 5px;
-  max-width: 100%;
+.movieRow .movieRow__listarea .movieRow__list .movieRow__item img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2s;
+  border-radius: 8px;
+}
+.movieRow .movieRow__listarea .movieRow__list .movieRow__item img:hover {
+  transform: scale(1);
+}
+
+.litstMovie__text {
+  font-size: 1.5em;
+  margin: 23px 0px 10px 20px;
+  font-weight: bold;
 }/*# sourceMappingURL=App.css.map */

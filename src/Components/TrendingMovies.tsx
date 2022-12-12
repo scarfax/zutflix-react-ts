@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Movie from './Movie'
 
 const TrendingMovies = () => {
 
-    const trendingMovie = [
+    const [trendingMovie, SetTrendingMovie] = useState([
         {
             title: 'Invasores de Corpos',
             abstract: 'Homem percebe que seu amigos começam a agir de forma estranha. Pouco a pouco, ele vai descobrindo que os humanos estão sendo substituídos por alienígenas. Além de resistir à invasão de seu corpo, ele tem de achar uma forma de derrotar essa ameaça maligna.',
@@ -129,21 +130,13 @@ const TrendingMovies = () => {
 
         },
 
-
-    ]
+    ])
 
     return (
-        <section className='trendingMovie__container'>
-            <div>
-                <h1 className="trendingMovie__text">Em Alta</h1>
-                <div className='trendingMovie__box'>
-                    {trendingMovie.map((movie) => (<a key={movie.title} className="trendingMovie__poster" href=""><img                         
-                        src={movie.poster}
-                        alt={movie.title}/></a>
-
-                    ))}
-                </div>
-            </div>
+        <section>
+            {trendingMovie.map(movies => {
+                return <Movie poster={movies.poster} title={movies.title} />
+            })}
         </section>
     )
 }
