@@ -12,6 +12,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/the-golden-glove-620855ffceb1c.jpg',
             logo: 'https://images.fanart.tv/fanart/the-golden-glove-5f487ed0535bc.png',
             background: 'https://www.themoviedb.org/t/p/original/c180O36twEcW4vJZgNXn0XvsRf8.jpg',
+            trailer: "https://www.youtube.com/watch?v=vQpQ2rWFlYc",
         },
 
         {
@@ -20,6 +21,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/the-last-house-on-the-left-5182f1f8b1ce2.jpg',
             logo: 'https://images.fanart.tv/fanart/the-last-house-on-the-left-5133e75983bd9.png',
             background: 'https://www.themoviedb.org/t/p/original/lGKSI1DhrfJHNUNtxTPTQ6AAOS4.jpg',
+            trailer: "https://www.youtube.com/watch?v=gftu8RjqJ_o",
         },
 
         {
@@ -28,6 +30,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/maniac-60d161d8006e2.jpg',
             logo: 'https://images.fanart.tv/fanart/maniac-519e9a6500f94.png',
             background: 'https://www.themoviedb.org/t/p/original/h5X5zO40G0pjPkyyzGh9PBsPI0B.jpg',
+            trailer: "https://www.youtube.com/watch?v=Pxsmw8nmNkU",
         },
 
         {
@@ -36,6 +39,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/audition-5fdccc027c6e1.jpg',
             logo: 'https://images.fanart.tv/fanart/audition-54ff97781980e.png',
             background: 'https://www.themoviedb.org/t/p/original/aKsWYFgY3p8b4TvFGdCsJgkMA3A.jpg',
+            trailer: "https://www.youtube.com/watch?v=EBQHp2__AVQ",
         },
 
         {
@@ -44,6 +48,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/death-wish-5d2431d643943.jpg',
             logo: 'https://images.fanart.tv/fanart/death-wish-5d2579a7a8b46.png',
             background: 'https://www.themoviedb.org/t/p/original/91CbIfKCy7UvtmMC5UfvX3WGeBL.jpg',
+            trailer: "https://www.youtube.com/watch?v=9OPrXv1t9cg",
         },
 
         {
@@ -52,6 +57,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/tenebre-605ae340575ea.jpg',
             logo: 'https://images.fanart.tv/fanart/tenebre-5257d4d3bd948.png',
             background: 'https://www.themoviedb.org/t/p/original/sTahRnDLZ4fDyTpBqTumMvsZLTD.jpg',
+            trailer: "https://www.youtube.com/watch?v=WiS5T9UbSEc",
         },
 
         {
@@ -60,6 +66,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/irreversible-55b2add955450.jpg',
             logo: 'https://images.fanart.tv/fanart/irreversible-507b13324b598.png',
             background: 'https://www.themoviedb.org/t/p/original/bl6x5Gmabg24fbzEO1Y1seTadhk.jpg',
+            trailer: "https://www.youtube.com/watch?v=d3qNrABvkjg",
         },
 
         {
@@ -68,6 +75,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/angst-63559d779f0e0.jpg',
             logo: 'https://images.fanart.tv/fanart/angst-602432e467f40.png',
             background: 'https://www.themoviedb.org/t/p/original/46kPXsazEkDyRKpOWk0V8GgCkPS.jpg',
+            trailer: "https://www.youtube.com/watch?v=P5MSigtzSjY",
 
         },
 
@@ -77,6 +85,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/body-double-56af78825225d.jpg',
             logo: 'https://images.fanart.tv/fanart/body-double-529c60973aae0.png',
             background: 'https://www.themoviedb.org/t/p/original/e2aiOGR8jZIr94haC5u1jJiXKPc.jpg',
+            trailer: "https://www.youtube.com/watch?v=vMG8V7Am8zI",
         },
 
         {
@@ -85,6 +94,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/natural-born-killers-51e1d5c30cf00.jpg',
             logo: 'https://images.fanart.tv/fanart/natural-born-killers-5059da1eda340.png',
             background: 'https://www.themoviedb.org/t/p/original/gGQvvkgiYf35FbG3K5Cw75m7KGt.jpg',
+            trailer: "https://www.youtube.com/watch?v=XJyLi-3qsDs",
         },
 
         {
@@ -93,6 +103,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/the-devils-rejects-5834c15811c4d.jpg',
             logo: 'https://images.fanart.tv/fanart/the-devils-rejects-505b2ceea09ba.png',
             background: 'https://www.themoviedb.org/t/p/original/9OvbJLn7pMDE7bnydHjpqfly8X2.jpg',
+            trailer: "https://www.youtube.com/watch?v=poxddLZq2k0",
         },
 
         {
@@ -101,6 +112,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/bad-lieutenant-588083210ba88.jpg',
             logo: 'https://images.fanart.tv/fanart/bad-lieutenant-50bfd9757f6c0.png',
             background: 'https://www.themoviedb.org/t/p/original/usT9QCFIs3NZRvvldIrFPTsln80.jpg',
+            trailer: "https://www.youtube.com/watch?v=3dQwWyWCD5M",
         },
 
         {
@@ -108,7 +120,8 @@ const CrimeMovies = () => {
             abstract: 'Uma adolescente procura se vingar de um grupo de rebeldes que violentaram sua irmã deficiente e mataram seu melhor amigo.',
             poster: 'https://images.fanart.tv/fanart/savage-streets-5b82923db3232.jpg',
             logo: 'https://images.fanart.tv/fanart/savage-streets-519e9848811c1.png',
-            background: 'https://www.themoviedb.org/t/p/original/mYGxfMf1Nc4xmkRPawvdI3mg8l9.jpg'
+            background: 'https://www.themoviedb.org/t/p/original/mYGxfMf1Nc4xmkRPawvdI3mg8l9.jpg',
+            trailer: "https://www.youtube.com/watch?v=nM6gkTY2IJY",
         },
 
         {
@@ -117,6 +130,7 @@ const CrimeMovies = () => {
             poster: 'https://images.fanart.tv/fanart/man-bites-dog-54be9a3fb071b.jpg',
             logo: 'https://images.fanart.tv/fanart/man-bites-dog-4fe2648096d0d.PNG',
             background: 'https://www.themoviedb.org/t/p/original/7aoLhmBLgFGsPSoKInKwjshaDar.jpg',
+            trailer: "https://www.youtube.com/watch?v=FjPFmIX-o_c", 
         },
 
     ])
@@ -124,7 +138,7 @@ const CrimeMovies = () => {
     return (
         <section>
             {crimeMovie.map(movies => {
-                return <Movie poster={movies.poster} title={movies.title} />
+                return <Movie key={movies.title} title={movies.title} abstract={movies.abstract} poster={movies.poster} logo={movies.logo} background={movies.background} trailer={movies.trailer} />
             })}
         </section>
     )

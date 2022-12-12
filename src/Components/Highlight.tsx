@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Highlight = () => {
   return (
     <section
@@ -17,11 +18,11 @@ const Highlight = () => {
           </div>
           <img className="highlight__image"
             src='https://images.fanart.tv/fanart/savage-streets-519e9848811c1.png'
-            alt="The Golden Glove" />
+            alt="Ruas Selvagens" />
           <p className="highlight__text">Uma adolescente procura se vingar de um grupo de rebeldes que violentaram sua irmã deficiente e mataram seu melhor amigo.</p>
           <div className="highlight__buttons">
         <a href="https://www.youtube.com/watch?v=4YYcg6VScSY" className="highlight__watchbutton">► Assistir</a>
-        <a href="https://www.youtube.com/watch?v=4YYcg6VScSY" className="highlight__mylistbutton">+ Minha Lista</a>
+        <a href="/" className="highlight__mylistbutton">+ Minha Lista</a>
         </div>
         </div>
 

@@ -138,7 +138,7 @@ const HorrorMovies = () => {
   return (
     <section>
     {horrorMovies.map(movies => {
-        return <Movie poster={movies.poster} title={movies.title} />
+        return <Movie key={movies.title} title={movies.title} abstract={movies.abstract} poster={movies.poster} logo={movies.logo} background={movies.background} trailer={movies.trailer} />
     })}
 </section>
   )
