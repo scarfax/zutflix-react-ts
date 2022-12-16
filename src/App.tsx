@@ -4,6 +4,7 @@ import Header from './Components/Header'
 import Highlight from './Components/Highlight'
 import Footer from './Components/Footer'
 import MoviesList from './Components/MoviesList';
+import { MovieContextProvider } from "./contexts/MovieContext"
 
 const App = () => {
 
@@ -26,11 +27,13 @@ const App = () => {
 
   return (
     <div>
-      <Header black={blackHeader} /> 
-      <Highlight />
-      <div className='movieList'>
-        <MoviesList/>
-             </div>
+      <Header black={blackHeader} />
+      <MovieContextProvider>
+        <Highlight />
+        <div className='movieList'>
+          <MoviesList />
+        </div>
+      </MovieContextProvider>
       <Footer />
     </div>
   )

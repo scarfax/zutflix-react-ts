@@ -1,29 +1,24 @@
 import React from 'react'
-import CrimeMovies from './CrimeMovies'
-import HorrorMovies from './HorrorMovies'
-import ScienceFictionMovies from './ScienceFictionMovies'
-import TrendingMovies from './TrendingMovies'
-
-
+import MoviesGenres from './MoviesGenres'
 
 const MoviesList = () => {
   return (
   <section>
     <div id="bombando">
         <h1 className='litstMovie__text' >Em Alta</h1>
-        <TrendingMovies/>
+        <MoviesGenres genre="trending"/>
     </div>
     <div id="ficcaoCientifica">
         <h1 className='litstMovie__text' >Ficção científica</h1>
-    <ScienceFictionMovies/>
+        <MoviesGenres genre="scienceFiction"/>
     </div>
     <div id="terror">
         <h1 className='litstMovie__text' >Terror</h1>
-    <HorrorMovies/>
+    <MoviesGenres genre="horror"/>
     </div>
     <div id="policial">
         <h1 className='litstMovie__text' >Policial</h1>
-    <CrimeMovies/>
+        <MoviesGenres genre="crime"/>
     </div>
 
   </section>

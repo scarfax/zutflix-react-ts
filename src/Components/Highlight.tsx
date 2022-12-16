@@ -1,14 +1,19 @@
-import React from 'react';
+import React, {useContext}  from 'react';
+import { MovieContext } from '../contexts/MovieContext';
 
 
 const Highlight = () => {
+
+
+  const { title, abstract, logo, trailer, background  } = useContext(MovieContext);
+
   return (
     <section
       className="highlight"
       style={{
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundImage: `url('https://www.themoviedb.org/t/p/original/mYGxfMf1Nc4xmkRPawvdI3mg8l9.jpg')`,
+        backgroundImage: `url('${background}')`,
       }}>
       <div className="highlight__vertical">
         <div className="highlight__horizontal">
@@ -17,11 +22,11 @@ const Highlight = () => {
             <h3 className="highlight__classification">F I L M E</h3>
           </div>
           <img className="highlight__image"
-            src='https://images.fanart.tv/fanart/savage-streets-519e9848811c1.png'
-            alt="Ruas Selvagens" />
-          <p className="highlight__text">Uma adolescente procura se vingar de um grupo de rebeldes que violentaram sua irmã deficiente e mataram seu melhor amigo.</p>
+            src={logo}
+            alt={title} />
+          <p className="highlight__text">{abstract}</p>
           <div className="highlight__buttons">
-        <a href="https://www.youtube.com/watch?v=4YYcg6VScSY" className="highlight__watchbutton">► Assistir</a>
+        <a href={trailer} className="highlight__watchbutton">► Assistir</a>
         <a href="/" className="highlight__mylistbutton">+ Minha Lista</a>
         </div>
         </div>
